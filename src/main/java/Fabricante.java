@@ -13,9 +13,7 @@ public class Fabricante {
     public Fabricante(String nombre, Pais pais) {
         this.nombre = nombre;
         this.pais = pais;
-        if(!listaf.contains(this)){
-            listaf.add(this);
-        }
+        Fabricante.listaf.add(this);
     }
 
     

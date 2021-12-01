@@ -10,9 +10,7 @@ public class Pais {
 
     public Pais(String nombre) {
         this.nombre = nombre;
-        if (!lista.contains(this)){
-            lista.add(this);
-        }
+        Pais.lista.add(this);
         
     }
 
