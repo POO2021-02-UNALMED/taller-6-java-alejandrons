@@ -14,7 +14,7 @@ public class Fabricante {
         this.nombre = nombre;
         this.pais = pais;
         this.fabricaVentas = 0;
-        Fabricante.listaf.add(this);
+        listaf.add(this);
     }
 
     
