@@ -7,8 +7,12 @@ public class Fabricante {
     private Pais pais;
     private int fabricaVentas;
 
-    public Fabricante() {
+    public Fabricante(String nombre, Pais pais) {
+        this.nombre = nombre;
+        this.pais = pais;
     }
+
+    
 
     public String getNombre() {
         return nombre;
