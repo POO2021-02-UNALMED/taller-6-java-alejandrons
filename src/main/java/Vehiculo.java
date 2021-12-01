@@ -21,6 +21,8 @@ public class Vehiculo {
         this.peso = peso;
         this.traccion = traccion;
         this.fabricante = fabricante;
+        fabricante.generarVenta();
+        fabricante.getPais().acumulaVentas();
         cantidadVehiculos++;
     }
 
@@ -84,10 +86,14 @@ public class Vehiculo {
         return fabricante;
     }
 
-    public void setFabricante(Fabricante frabricante) {
-        this.fabricante = frabricante;
+    public void setFabricante(Fabricante fabricante) {
+        this.fabricante = fabricante;
     }
 
+    public static void setCantidadVehiculos(int cantidadVehiculos) {
+        Vehiculo.cantidadVehiculos = cantidadVehiculos;
+    }
+    
     public static int getCantidadVehiculos() {
         return cantidadVehiculos;
     }

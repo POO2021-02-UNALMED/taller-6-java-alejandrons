@@ -1,12 +1,19 @@
 
 package vehiculos;
 
+import java.util.ArrayList;
+
 public class Pais {
     private String nombre;
     private int paisVentas;
+    private static ArrayList<Pais> lista;
 
     public Pais(String nombre) {
         this.nombre = nombre;
+        if (!lista.contains(this)){
+            lista.add(this);
+        }
+        
     }
 
     public String getNombre() {
@@ -19,5 +26,20 @@ public class Pais {
     
     public void acumulaVentas(){
         this.paisVentas+=1;
+    }
+
+    public int getPaisVentas() {
+        return paisVentas;
+    }
+    
+    public static Pais paisMasVendedor(){
+        int max = 0,ind=0;
+        for(Pais p : lista){
+            if(p.getPaisVentas()>max){
+                max = p.getPaisVentas();
+                ind = lista.indexOf(p);
+            }
+        }
+        return lista.get(ind);
     }
 }
