@@ -10,6 +10,7 @@ public class Pais {
 
     public Pais(String nombre) {
         this.nombre = nombre;
+        this.paisVentas = 0;
         Pais.lista.add(this);
         
     }
