@@ -5,12 +5,11 @@ import java.util.ArrayList;
 
 public class Pais {
     private String nombre;
-    private int paisVentas;
-    private static ArrayList<Pais> lista;
+    private int paisVentas = 0;
+    private static ArrayList<Pais> lista = new ArrayList();
 
     public Pais(String nombre) {
         this.nombre = nombre;
-        this.paisVentas = 0;
         lista.add(this);
         
     }

@@ -7,13 +7,12 @@ import java.util.ArrayList;
 public class Fabricante {
     private String nombre;
     private Pais pais;
-    private int fabricaVentas;
-    private static ArrayList<Fabricante> listaf;
+    private int fabricaVentas = 0;
+    private static ArrayList<Fabricante> listaf = new ArrayList();
 
     public Fabricante(String nombre, Pais pais) {
         this.nombre = nombre;
         this.pais = pais;
-        this.fabricaVentas = 0;
         listaf.add(this);
     }
 
