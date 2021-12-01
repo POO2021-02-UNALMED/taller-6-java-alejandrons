@@ -5,7 +5,8 @@ public class Pais {
     private String nombre;
     private int paisVentas;
 
-    public Pais() {
+    public Pais(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getNombre() {
